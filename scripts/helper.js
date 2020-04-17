@@ -1,12 +1,16 @@
 class Helper {
-  const(helper) {
-playPauseAndUpdate(song) {
-  $('player.playpause').on(function => {
-    const song = player.currentlyPlaying;
-    const totalTime = album.song.duration;
-  });
-  }
- }
-}
+  playPauseAndUpdate(song) {
+        player.playPause(song);
+        let totalTime = 'null';
+        if (song !== undefined){
+          totalTime =song.duration;
+        } else {
+          totalTime = player.getDuration();
+      }
 
-const player.playPause = new Helper();
+      $('#time-control .total-time').text(totalTime);
+
+    };
+};
+
+const helper = new Helper();

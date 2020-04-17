@@ -43,11 +43,5 @@
     player.setVolume(event.target.value);
   });
 
-  setInterval( () => {
-    const currentVolume = player.getVolume();
-    const maxVolume = 100;
-    const percent = (currentVolume / maxVolume) * 100;
-    $('#volume-control input').val(percent);
-  });
 
 }
