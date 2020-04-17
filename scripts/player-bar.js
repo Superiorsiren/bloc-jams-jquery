@@ -38,4 +38,16 @@
     $('#time-control .current-time').text( currentTime );
     $('#time-control input').val(percent);
   }, 1000);
+
+  $('#volume-control input').on('input', function (event) {
+    player.setVolume(event.target.value);
+  });
+
+  setInterval( () => {
+    const currentVolume = player.getVolume();
+    const maxVolume = 100;
+    const percent = (currentVolume / maxVolume) * 100;
+    $('#volume-control input').val(percent);
+  });
+
 }
