@@ -47,13 +47,6 @@ class Player {
     this.volume = percent;
     this.soundObject.setVolume(percent);
   }
-// My attempt at extra credit failed
-  //prettyTime (timeInSeconds) {
-    //var M = math.floor(timeInSeconds / 60);
-    //var SS = timeInSeconds % 60;
-    //M = (M <10) ? "0" + M : M;
-    //return (M + ":" + SS);
-  //};
 
 };
 
