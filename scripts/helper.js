@@ -6,11 +6,11 @@ class Helper {
           totalTime =song.duration;
         } else {
           totalTime = player.getDuration();
-      }
+      };
+  };
 
-      $('#time-control .total-time').text(totalTime);
-
-    };
+      $('#time-control .total-time').text( totalTime );
+      
 };
 
 const helper = new Helper();
