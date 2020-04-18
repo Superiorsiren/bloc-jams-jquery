@@ -3,13 +3,13 @@ class Helper {
         player.playPause(song);
         let totalTime = 'null';
         if (song !== undefined){
-          totalTime =song.duration;
+          totalTime = song.duration;
         } else {
           totalTime = player.getDuration();
         };
 
       $('#time-control .total-time').text(totalTime);
-      
+
   };
 };
 
